@@ -26,6 +26,12 @@
 
    If you're stuck somewhere.
 
+## Build
+
+1. `go build -o gh`
+
+2. `sudo mv gh /usr/local/bin/`
+
 ## Contribute
 
 If you want to add / modify some feature, feel free to fork and open a PR.
