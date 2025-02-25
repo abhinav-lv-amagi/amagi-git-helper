@@ -1,4 +1,4 @@
-module github.com/abhinav-lv-amagi/git-helper-cli
+module github.com/abhinav-lv-amagi/amagi-git-helper
 
 go 1.24.0
 
