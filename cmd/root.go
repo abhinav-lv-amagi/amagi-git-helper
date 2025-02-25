@@ -14,9 +14,10 @@ var rootCmd = &cobra.Command{
 	Use:   "gh",
 	Short: "A simple tool to help you with the branch name and commit message conventions at Amagi.",
 	Long: `
-	This tool is for you if you keep forgetting to add the JIRA ticket to your branch name and commit messages. 
-	Just answer the prompts and everything else will be taken care of. 
-	Try running gh --help to see the list of commands.`,
+This tool is for you if you keep forgetting to add the JIRA ticket to your branch name and commit messages. 
+Just answer the prompts and everything else will be taken care of. 
+Try running gh --help to see the list of commands.
+	`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	// Run: func(cmd *cobra.Command, args []string) { },
