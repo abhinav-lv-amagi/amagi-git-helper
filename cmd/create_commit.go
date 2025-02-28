@@ -49,7 +49,7 @@ var createCommitCmd = &cobra.Command{
 	Short: "Interactively create a commit message following company conventions",
 	Long: `This command interactively builds a commit message with the following template:
   
-git commit -m "${type: fix | feat}(${product: lego | plec}): ${commit desc (short)}" -m "${type: Fixes | Adds} ${JIRA ticket id}"
+git commit -m "${type: fix | feat}(${product: lego | plec}): ${commit desc (short)}" -m "${type: Fixes | Closes} ${JIRA ticket id}"
 
 It prompts for commit type, product, and a short description, and extracts the JIRA ticket id from the current branch name.`,
 	RunE: func(cmd *cobra.Command, args []string) error {
@@ -121,7 +121,7 @@ It prompts for commit type, product, and a short description, and extracts the J
 		case "fix":
 			verb = "Fixes"
 		case "feat":
-			verb = "Adds"
+			verb = "Closes"
 		default:
 			verb = strings.Title(commitType)
 		}
